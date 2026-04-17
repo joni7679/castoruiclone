@@ -1,0 +1,191 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.logo {
+    height: 50px;
+}
+
+
+
+/* DARK OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+
+
+
+
+.hotel-showcase {
+    background: #f8f8f8;
+}
+
+
+.hotel-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.3s ease;
+
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+
+.hotel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+
+.hotel-content {
+    padding: 20px;
+}
+
+.hotel-title {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hotel-sub {
+    font-size: 12px;
+    color: #888;
+}
+
+.hotel-desc {
+    font-size: 13px;
+    margin: 8px 0;
+    color: #555;
+}
+
+
+.btn-custom {
+    border: 1px solid #c8a97e;
+    color: #c8a97e;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #c8a97e;
+    color: #fff;
+}
+
+.slick-slide {
+    padding: 0 10px;
+    /* horizontal gap */
+}
+
+.slick-list {
+    margin: 0 -10px;
+    /* fix outer spacing */
+}
+
+.promo-offers {
+    background: #0f5c59;
+    /* dark green */
+    color: #fff;
+}
+
+/* Title */
+.promo-title {
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.promo-title .line {
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.promo-sub {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #dcdcdc;
+}
+
+.promo-desc {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+/* Cards */
+.promo-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.promo-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.promo-text {
+    padding-top: 12px;
+}
+
+.promo-text p {
+    color: #333;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Hover effect */
+.promo-card:hover {
+    transform: translateY(-5px);
+}
