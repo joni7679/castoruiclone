@@ -1,8 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* NAVBAR */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .navbar {
     position: absolute;
     width: 100%;
@@ -44,7 +57,24 @@ body {
     line-height: 1.2;
 }
 
+.custom-caption {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 400px;
+}
 
+.custom-caption h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.custom-caption p {
+    font-size: 18px;
+    margin: 10px 0;
+}
 
 
 
@@ -188,4 +218,14 @@ body {
 /* Hover effect */
 .promo-card:hover {
     transform: translateY(-5px);
+}
+
+
+/* responsive */
+
+
+@media (max-width: 980px) {
+    .navbar-nav {
+        background-color: #0f5c59;
+    }
 }
